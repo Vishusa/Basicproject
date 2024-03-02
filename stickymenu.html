@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navbar</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        #header{
+            text-align: center;
+        }
+        #logo{
+            height: 200px;
+            width: 200px;
+        }
+        #menubar{
+            text-align: center;
+            background-color: teal;           
+}
+#menubar li{
+     display: inline-block;
+     padding: 15px 10px;
+     color: white;
+     font-size: 20px;
+     font-weight: bold;
+}
+#container{
+    text-align: center;
+}
+#image{
+    height: 500px;
+    width: 100%;
+}
+.sticky{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+    </style>
+</head>
+<body>
+    <div id="header">
+<img src="Untitled.png" id="logo" alt="">
+    </div>
+    <nav id="menubar">
+        <li>Home</li>
+        <li>About US</li>
+        <li>Our Team</li>
+        <li>Client</li>
+        <li>Contact US</li>
+    </nav>
+    <div id="container">
+    <h1>About us</h1>
+    <img src="images.jpg" id="image" alt="">    
+    </div>
+<p id="text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis rem blanditiis quis! Dolorum dolore sint assumenda, expedita, aperiam fugiat repellat ullam autem eius laboriosam laborum quidem rerum, sapiente omnis. Officia delectus quam soluta pariatur temporibus consequatur repellendus harum dignissimos earum. Similique velit magnam mollitia qui modi placeat ducimus excepturi quia molestias totam error expedita facere soluta libero possimus dolorum maiores, distinctio doloremque omnis earum tempora! Alias quidem repellat possimus ipsam facere quam, illo molestiae architecto explicabo tenetur. Omnis, veniam quisquam. Praesentium minima omnis sint, qui asperiores architecto iure accusantium itaque, sequi necessitatibus autem minus saepe culpa odio. Cupiditate hic suscipit quidem quae vero autem, corporis, nesciunt veritatis eos ipsum voluptas? Inventore, earum delectus! Qui, eius nemo dignissimos cum ex laborum ab illum! Vitae nemo magnam, enim maxime cum provident quas! Similique adipisci sapiente earum ut laudantium quaerat aperiam ea, quis accusantium consequatur doloremque error recusandae quam, quisquam officia eveniet placeat? Voluptatibus porro saepe ad inventore nesciunt deleniti, aspernatur nam. Nulla, eum rerum. Iusto qui tenetur delectus, optio alias eaque, vel quia modi voluptatibus unde similique ratione consectetur nemo eveniet eos est ipsa recusandae, iste aliquam eius odio veritatis. Aliquam sit sapiente alias inventore rerum, soluta doloremque id earum eos sint non accusantium minima consectetur esse libero mollitia nisi sunt repudiandae dolorum vero expedita! Temporibus saepe alias non impedit nam porro, minus tenetur assumenda recusandae natus fugit quam nesciunt sit ex eum voluptas officia aut eius! Veniam qui harum ullam dicta veritatis, at iste id accusantium est! Saepe debitis possimus ipsum doloribus, tenetur soluta quae quis sunt maiores est incidunt. Nostrum corrupti commodi, id harum non distinctio! Dolor explicabo, quibusdam placeat ea ullam omnis praesentium optio. Dolorum deserunt maiores, nulla debitis eos voluptas rem, doloremque inventore aliquid possimus dolore. Sint officia aliquam laboriosam itaque est earum fuga dolore, nisi ratione quam beatae ipsam nam neque non hic dicta, delectus reprehenderit! Necessitatibus fugit cum deleniti iste, odio enim voluptatum eaque possimus, ea laudantium sequi, voluptatibus adipisci culpa dolore? Earum, minima dolores magni voluptatem ad nulla excepturi. Velit corrupti vitae perferendis perspiciatis esse dolorum eveniet inventore blanditiis, eos hic a laudantium commodi necessitatibus consequatur voluptas minima et debitis tempora amet est delectus in rem ut placeat. In fugiat et nam doloribus animi. Dolorum, temporibus. Perferendis commodi possimus culpa nobis aliquam eos facere iste necessitatibus dolore sunt tempora aliquid ducimus reprehenderit, sint asperiores voluptas mollitia, ex accusantium molestias architecto! Natus cupiditate neque alias nemo consectetur sed cum rerum, corrupti laudantium dolorum veniam aspernatur sit, ullam odit vel provident, impedit reiciendis optio ad excepturi? Architecto tempore laboriosam officiis sapiente quasi non accusamus fugit voluptas ex dignissimos hic molestiae, unde obcaecati temporibus aperiam reiciendis perspiciatis voluptate modi dolorum a illum laborum. Itaque earum expedita veritatis reiciendis, ab, modi nostrum tenetur deleniti quis, recusandae aperiam minus possimus officiis dicta fuga aspernatur beatae. Nemo temporibus, laboriosam sed, iure officia iste quidem vitae vel odio id exercitationem. Porro voluptas est provident tempore labore quam sunt natus, molestias odio quas eum maiores totam tempora eveniet vero earum unde consequuntur architecto?
+</p>
+<script>
+window.addEventListener('scroll' , function(){
+    let menu = document.getElementById("menubar")
+
+    if(window.pageYOffset >= 240){
+        menu.classList.add('sticky')
+    }else{
+        menu.classList.remove('sticky')
+    }
+})
+</script>
+</body>
+</html>
